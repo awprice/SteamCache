@@ -1,0 +1,13 @@
+; BIND reverse data file
+$TTL 86400
+@      IN      SOA      steam-cache. PRIVATE_IP (
+                        1               ; Serial
+                        604800          ; Refresh
+                        86400           ; Retry
+                        2419200         ; Expire
+                        86400 )         ; Negative Cache TTL
+;
+@      IN      NS       steam-cache.
+
+@      IN      A        PRIVATE_IP
+*      IN      A        PRIVATE_IP
